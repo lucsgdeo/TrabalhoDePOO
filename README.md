@@ -1,2 +1,0 @@
-# TrabalhoDePOO
-Uninter
