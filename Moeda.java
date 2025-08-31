@@ -1,22 +1,22 @@
 import java.util.Objects;
 
-public abstract class Moeda {
+public abstract class Moeda { // classe moeda
     protected double valor;
 
-    public Moeda(double valor) {
+    public Moeda(double valor) { // construtor
         this.valor = valor;
     }
 
-    public double getValor() {
+    public double getValor() { // pegar valor
         return valor;
     }
 
-    public abstract void info();
+    public abstract void info(); // infos sobre a moeda
 
-    public abstract double converter();
+    public abstract double converter(); // converter para real
 
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) { // Pelo que entendi através de buscas na internet, o equals e hash code são utilzados para que possamos encontrar objetos dentro da Collecyion
         if (this == obj) {
             return true;
         }

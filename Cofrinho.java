@@ -1,19 +1,19 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cofrinho {
+public class Cofrinho { // Classe cofrinho
     private List<Moeda> listaMoedas;
 
     public Cofrinho() {
         this.listaMoedas = new ArrayList<>();
     }
 
-    public void adicionar(Moeda moeda) {
+    public void adicionar(Moeda moeda) { // adiciona moeedas
         this.listaMoedas.add(moeda);
         System.out.println("Moeda adicionada");
     }
 
-    public void remover(Moeda moeda) {
+    public void remover(Moeda moeda) { // remove moeedas
         if (this.listaMoedas.remove(moeda)) {
             System.out.println("Moeda removida");
         } else {
@@ -21,7 +21,7 @@ public class Cofrinho {
         }
     }
 
-    public void listagemMoedas() {
+    public void listagemMoedas() { // lista moeedas
         if (this.listaMoedas.isEmpty()) {
             System.out.println("O cofrinho está vazio");
         } else {
@@ -33,7 +33,7 @@ public class Cofrinho {
         }
     }
 
-    public double totalConvertido() {
+    public double totalConvertido() { // converte moeedas
         if (this.listaMoedas.isEmpty()) {
             return 0;
         }

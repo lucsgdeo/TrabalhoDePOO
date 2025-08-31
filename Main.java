@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main { // Classe principal
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Cofrinho cofrinho = new Cofrinho();
 
         int opcao = 0;
-        while (opcao != 5) {
+        while (opcao != 5) { //Opcoes de esolhas
             System.out.println("\n--- Menu Cofrinho ---");
             System.out.println("1. Adicionar moeda");
             System.out.println("2. Remover moeda");
@@ -47,7 +47,7 @@ public class Main {
         scanner.close();
     }
 
-    private static void adicionarMoeda(Scanner scanner, Cofrinho cofrinho) {
+    private static void adicionarMoeda(Scanner scanner, Cofrinho cofrinho) { // metodo de adicionar moendas
         System.out.println("\n--- Adicionar Moeda ---");
         System.out.println("1. Dólar");
         System.out.println("2. Euro");
@@ -76,7 +76,7 @@ public class Main {
         cofrinho.adicionar(novaMoeda);
     }
     
-    private static void removerMoeda(Scanner scanner, Cofrinho cofrinho) {
+    private static void removerMoeda(Scanner scanner, Cofrinho cofrinho) { //metodo de remover moendas
         System.out.println("\n--- Remover Moeda ---");
         System.out.println("1. Dólar");
         System.out.println("2. Euro");

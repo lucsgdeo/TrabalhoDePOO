@@ -4,12 +4,12 @@ public class Euro extends Moeda {
     }
 
     @Override
-    public void info() {
+    public void info() { //infos da moeda
         System.out.println("Euro: € " + this.valor);
     }
 
     @Override
-    public double converter() {
+    public double converter() { //converte a moeda
         return this.valor * 6.35;
     }
 }
